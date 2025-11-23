@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-API Webhook Viewer</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo">Z</div>
+                <h1>Webhook Viewer</h1>
+            </div>
+            
+            <div class="status-card">
+                <h3>Instance Status</h3>
+                <div class="status-indicator" id="connection-status">
+                    <span class="dot"></span>
+                    <span class="text">Waiting for events...</span>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <h3>Statistics</h3>
+                <div class="stat-item">
+                    <span class="label">Events Received</span>
+                    <span class="value" id="event-count">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">Last Event</span>
+                    <span class="value" id="last-event-time">-</span>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="clear-btn" class="btn btn-secondary">Clear Feed</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <h2>Live Event Feed</h2>
+                <div class="connection-state">
+                    <span class="status-dot" id="ws-status"></span>
+                    WebSocket Connected
+                </div>
+            </header>
+
+            <div id="event-feed" class="event-feed">
+                <!-- Events will be inserted here -->
+                <div class="empty-state">
+                    <p>Waiting for webhook events...</p>
+                    <small>Configure your Z-API instance to send webhooks to this URL.</small>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <template id="event-template">
+        <div class="event-card">
+            <div class="event-header">
+                <div class="event-type-badge">TYPE</div>
+                <span class="event-time">TIME</span>
+            </div>
+            <div class="event-body">
+                <div class="event-summary">SUMMARY</div>
+                <pre class="event-payload"><code></code></pre>
+            </div>
+        </div>
+    </template>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
