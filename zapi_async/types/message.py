@@ -104,7 +104,7 @@ class TextMessage(BaseWebhookMessage):
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> TextMessage:
         """Create from webhook payload."""
-        base = super().from_dict(data)
+        base = BaseWebhookMessage.from_dict(data)
         text_data = data.get('text', {})
         
         return cls(
@@ -133,7 +133,7 @@ class ImageMessage(BaseWebhookMessage):
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> ImageMessage:
         """Create from webhook payload."""
-        base = super().from_dict(data)
+        base = BaseWebhookMessage.from_dict(data)
         image_data = data.get('image', {})
         
         return cls(
@@ -162,7 +162,7 @@ class VideoMessage(BaseWebhookMessage):
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> VideoMessage:
         """Create from webhook payload."""
-        base = super().from_dict(data)
+        base = BaseWebhookMessage.from_dict(data)
         video_data = data.get('video', {})
         
         return cls(
@@ -189,7 +189,7 @@ class AudioMessage(BaseWebhookMessage):
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> AudioMessage:
         """Create from webhook payload."""
-        base = super().from_dict(data)
+        base = BaseWebhookMessage.from_dict(data)
         audio_data = data.get('audio', {})
         
         return cls(
@@ -217,7 +217,7 @@ class DocumentMessage(BaseWebhookMessage):
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> DocumentMessage:
         """Create from webhook payload."""
-        base = super().from_dict(data)
+        base = BaseWebhookMessage.from_dict(data)
         doc_data = data.get('document', {})
         
         return cls(
@@ -242,7 +242,7 @@ class StickerMessage(BaseWebhookMessage):
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> StickerMessage:
         """Create from webhook payload."""
-        base = super().from_dict(data)
+        base = BaseWebhookMessage.from_dict(data)
         sticker_data = data.get('sticker', {})
         
         return cls(
@@ -267,7 +267,7 @@ class LocationMessage(BaseWebhookMessage):
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> LocationMessage:
         """Create from webhook payload."""
-        base = super().from_dict(data)
+        base = BaseWebhookMessage.from_dict(data)
         loc_data = data.get('location', {})
         
         return cls(
@@ -292,7 +292,7 @@ class ContactMessage(BaseWebhookMessage):
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> ContactMessage:
         """Create from webhook payload."""
-        base = super().from_dict(data)
+        base = BaseWebhookMessage.from_dict(data)
         contact_data = data.get('contact', {})
         
         return cls(
@@ -324,7 +324,7 @@ class ReactionMessage(BaseWebhookMessage):
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> ReactionMessage:
         """Create from webhook payload."""
-        base = super().from_dict(data)
+        base = BaseWebhookMessage.from_dict(data)
         reaction_data = data.get('reaction', {})
         
         ref_msg = None

@@ -9,8 +9,8 @@ Before running any tests, ensure you have the necessary dependencies installed.
 Open your terminal in the project root directory and run:
 
 ```bash
-# Install the package in editable mode with test dependencies
-pip install -e ".[test]"
+# Install the package in editable mode with ALL test dependencies
+pip install -e ".[dev,test]"
 ```
 
 This installs `pytest`, `pytest-asyncio`, `pytest-cov`, and other required libraries.

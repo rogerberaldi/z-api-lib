@@ -1,0 +1,39 @@
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:64] 📝 Creating test configuration
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:213] 🔧 Creating mock httpx client
+2025-11-23 00:57:31 [   DEBUG] [selector_events.py:64] Using selector: EpollSelector
+2025-11-23 00:57:31 [   DEBUG] [selector_events.py:64] Using selector: EpollSelector
+2025-11-23 00:57:31 [    INFO] [conftest.py:284] 🏗️  Creating mock ZAPIClient instance
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:96] 📦 Creating mock sent message response
+2025-11-23 00:57:31 [    INFO] [test_client.py:150] 🧪 Testing send_text (basic)
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:429] ✅ Asserting SentMessage: SentMessage(message_id=D241XXXX732339502B68)
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:436] ✅ SentMessage validation passed
+2025-11-23 00:57:31 [    INFO] [test_client.py:168] ✅ Text message sent successfully: D241XXXX732339502B68
+2025-11-23 00:57:31 [    INFO] [conftest.py:294] 🧹 Cleaning up mock ZAPIClient
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:64] 📝 Creating test configuration
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:213] 🔧 Creating mock httpx client
+2025-11-23 00:57:31 [   DEBUG] [selector_events.py:64] Using selector: EpollSelector
+2025-11-23 00:57:31 [    INFO] [conftest.py:284] 🏗️  Creating mock ZAPIClient instance
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:96] 📦 Creating mock sent message response
+2025-11-23 00:57:31 [    INFO] [test_client.py:178] 🧪 Testing send_text (with formatting)
+2025-11-23 00:57:31 [    INFO] [test_client.py:194] ✅ Formatted text sent successfully
+2025-11-23 00:57:31 [    INFO] [conftest.py:294] 🧹 Cleaning up mock ZAPIClient
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:64] 📝 Creating test configuration
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:213] 🔧 Creating mock httpx client
+2025-11-23 00:57:31 [   DEBUG] [selector_events.py:64] Using selector: EpollSelector
+2025-11-23 00:57:31 [    INFO] [conftest.py:284] 🏗️  Creating mock ZAPIClient instance
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:96] 📦 Creating mock sent message response
+2025-11-23 00:57:31 [    INFO] [test_client.py:203] 🧪 Testing send_text (with delays)
+2025-11-23 00:57:31 [    INFO] [test_client.py:222] ✅ Message with delays sent successfully
+2025-11-23 00:57:31 [    INFO] [conftest.py:294] 🧹 Cleaning up mock ZAPIClient
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:64] 📝 Creating test configuration
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:213] 🔧 Creating mock httpx client
+2025-11-23 00:57:31 [   DEBUG] [selector_events.py:64] Using selector: EpollSelector
+2025-11-23 00:57:31 [    INFO] [conftest.py:284] 🏗️  Creating mock ZAPIClient instance
+2025-11-23 00:57:31 [   DEBUG] [conftest.py:96] 📦 Creating mock sent message response
+2025-11-23 00:57:31 [    INFO] [test_client.py:230] 🧪 Testing phone number formatting
+2025-11-23 00:57:31 [   DEBUG] [test_client.py:244] Testing phone format: +55 11 99999-9999
+2025-11-23 00:57:31 [   DEBUG] [test_client.py:244] Testing phone format: (11) 99999-9999
+2025-11-23 00:57:31 [   DEBUG] [test_client.py:244] Testing phone format: 11999999999
+2025-11-23 00:57:31 [   DEBUG] [test_client.py:244] Testing phone format: 5511999999999
+2025-11-23 00:57:31 [    INFO] [test_client.py:260] ✅ All phone formats handled correctly
+2025-11-23 00:57:31 [    INFO] [conftest.py:294] 🧹 Cleaning up mock ZAPIClient
